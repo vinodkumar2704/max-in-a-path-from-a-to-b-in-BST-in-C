@@ -1,0 +1,37 @@
+Given an array A of n integers and two integers a and b which belongs to the given array. Write
+a program to create a Binary Search Tree T by inserting the elements from A[0] to A[n − 1] and
+find the maximum element in the path from a to b. Assume that the elements a and b are present
+in T.
+
+
+Note: Each node of the BST is of the following type:
+
+struct node {
+int data;
+struct node *leftChild;
+struct node *rightChild;
+};
+
+
+Example:
+A= 18, 36, 9, 6, 12, 10, 1, 8 ,
+a = 1, b = 10.
+The maximum element in the path from 1 to 10 is 12. (Refer figure)
+
+Input Format:
+• First line of the input contains n integers separated by a space representing the elements of
+array. The integers are in the range [−106
+, 106
+].
+• Second line of the input contains two integers a and b.
+
+Output Format:
+• Single line that contains the maximum element in the path from a to b.
+
+
+Sample Input:
+18 36 9 6 12 10 1 8
+1 10
+
+Sample Output:
+12
